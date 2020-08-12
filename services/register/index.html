@@ -3,13 +3,13 @@
   <head>
     <title>Register SHZDI - Shuzhou Digital Identifier</title>
     <script>
-      var school = document.getElementById("school").value;
-      var path = document.getElementById("path").value;
+      var school = document.getElementById("school");
+      var path = document.getElementById("path");
       function register(){
-        alert ("You have requested the path you wished:\nhttps://shzdi.github.io/link/"+school+"/"+path+"\nIs it right. If it isn't, you should quit this site & try again.");
+        alert ("You have requested the path you wished:\nhttps://shzdi.github.io/link/"+ school +"/" + path +"\nIs it right. If it isn't, you should quit this site & try again.");
         var aschool;
-        aschool = "mailto:shuzhou.liu2008@gmail.com?subject=Get%20SHZDI%20Link:%20(URL:%20https://shzdi.github.io/link/"+school+"/"+path+")";
-        window.location.href="aschool";
+        aschool = "mailto:shuzhou.liu2008@gmail.com?subject=Get%20SHZDI%20Link:%20(URL:%20https://shzdi.github.io/link/"+ school +"/"+ path +")";
+        window.location.href = aschool;
       }
     </script>
     <style>

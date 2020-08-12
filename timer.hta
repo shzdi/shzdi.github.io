@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Shuzhou Timer - Shuzhou Apps</title>
+<script>
+function myFunction()
+{
+	var min = document.getElementById("min").value;
+	var secs = document.getElementById("secs").value;
+    setTimeout(
+			function(){
+				alert("The Timer has Finished. Thank you.");
+			},
+			min*60*1000+secs*1000);
+			
+}
+</script>
+</head>
+<body>
+<progress value="secs" max="100">
+<input type="text" id = "min"/>:<input type="text" maxlength= "2" id = "secs"/>
+<p>Click the button to start timer.</p>
+<p>When it has finished, the timer will popup.</p>
+<button onclick="myFunction()">START</button>
+</body>
+</html>

@@ -1,20 +1,15 @@
 <!doctype html>
 <html>
   <head>
-    <title>Home - Shuzhou Digital Identifier</title>
+    <title>Register SHZDI - Shuzhou Digital Identifier</title>
     <script>
-      function lastupdated(){
-        var tlu = "8/12/2020 11:38 AM";
-        alert (tlu+"\n\n(c)2020 Shuzhou Foundation. All rights reserved.");
-      }
-      function home(){
-       window.location.href="https://shzdi.github.io/home";
-      }
-      function downloads(){
-       window.location.href="https://shzdi.github.io/downloads";
-      }
+      var school = document.getElementById("school").value;
+      var path = document.getElementById("path").value;
       function register(){
-       window.location.href="https://shzdi.github.io/services/register/";
+        alert ("You have requested the path you wished:\nhttps://shzdi.github.io/link/"+school+"/"+path+"\nIs it right. If it isn't, you should quit this site & try again.");
+        var aschool;
+        aschool = "mailto:shuzhou.liu2008@gmail.com?subject=Get%20SHZDI%20Link:%20(URL:%20https://shzdi.github.io/link/"+school+"/"+path+")";
+        window.location.href="aschool";
       }
     </script>
     <style>
@@ -24,33 +19,12 @@
     </style>
   </head>
   <body class = "shuzhou">
-    <p>
-      <a href="#" onclick = "home()">
-        <button class = "shuzhou">Home</button>
-      </a>
-      <a href="#" onclick = "downloads()">
-        <button class = "shuzhou">Downloads</button>
-      </a>
-      <a href="#" onclick = "register()">
-        <button class = "shuzhou">Register for SHZDI</button>
-      </a>
-      <a href="#" onclick = "region()">
-        <input type="submit" class = "shuzhou" disabled = "disabled" value = "Change Region"/>
-      </a>
-      <script async src="https://cse.google.com/cse.js?cx=000170309205623803789:kexvbphc9rq"></script>
-      <div class="gcse-search"></div>
-     </p>
-     <h1>
-       What is a SHZDI?
-    </h1>
-    <p>An SHZDI is a Shuzhou Digital Identifier. It will look like <input type="submit" class = "shuzhou" disabled = "disabled" value = "https://shzdi.github.io/link/yourschool/shzdi-id/"/>.
-      Do you want to register one? Then click this button FAST!</p>
-    <a href="javascript:void(0)" onclick = "register()">
-        <button class = "shuzhou">Register</button>
-      </a>
-    <footer class = "site-footer">
-      <p>&copy;2020 Shuzhou Foundation. All rights reserved.<br>
-        Thanks to Github &amp; Google for giving support.<br>
-        <h3>Powered by <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" width = 130 height = 50/></h3></p>
+    <h2>SHZDI Registration</h2>
+    <p>Please enter your wished site:<br>
+       https://shzdi.github.io/link/
+      <input type="text" placeholder="Your School?" length = 15 id="school" name="school"/>/
+      <input type="text" placeholder="The path you wish?" id="path" name="path">
+      <input type="Submit" value="Submit Request" class="shuzhou" onclick="register()"/>
+    </p>
   </body>
 </html>
